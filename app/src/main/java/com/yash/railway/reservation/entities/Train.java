@@ -25,7 +25,7 @@ public class Train {
     @JsonProperty("stations_name")
     private List<String> stationsName;
 
-    // ✅ REQUIRED for Jackson
+    // REQUIRED for Jackson
     public Train() {
     }
 
@@ -101,3 +101,4 @@ public class Train {
     // %s --> placeholder for trainNo
     // String.format() --> is used to create a clean sentence by inserting values into fixed placeholders.
 }
+
