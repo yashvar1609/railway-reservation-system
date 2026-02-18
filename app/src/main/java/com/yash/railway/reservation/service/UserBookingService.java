@@ -208,20 +208,20 @@ public class UserBookingService {
                     String destinationStation = train.getStationsName()
                             .get(train.getStationsName().size() - 1);
                     Tickets ticket = new Tickets(
-                            user.getUsername(),             // username
-                            sourceStation,                              // source (update later)
-                            destinationStation,                              // destination (update later)
+                            user.getUsername(),                    // username
+                            sourceStation,                        // source (update later)
+                            destinationStation,                  // destination (update later)
                             new Date().toString(),              // date
-                            UUID.randomUUID().toString(),       // ticketId
-                            train,                              // train object
+                            UUID.randomUUID().toString(),      // ticketId
+                            train,                             // train object
                             row,
                             seat
                     );
 
-                    // ✅ Add ticket to logged-in user
+                    //  Add ticket to logged-in user
                     user.getTicketsBooked().add(ticket);
 
-                    // ✅ Save users file
+                    //  Save users file
                     saveUserListToFile();
 
                     System.out.println("Booking Successful!");
@@ -243,5 +243,6 @@ public class UserBookingService {
     }
 
 }
+
 
 
