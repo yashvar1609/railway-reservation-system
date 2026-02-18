@@ -15,11 +15,11 @@ public class Tickets {
     private int row;
     private int seat;
 
-    // ✅ REQUIRED for Jackson
+    // REQUIRED for Jackson
     public Tickets() {
     }
 
-    // ✅ Main constructor used while booking
+    //  Main constructor used while booking
     public Tickets(String userId,
                    String source,
                    String destination,
@@ -109,3 +109,4 @@ public class Tickets {
     }
 
 }
+
